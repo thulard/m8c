@@ -55,6 +55,6 @@ popd
 killall -s SIGINT alsa_out alsa_in
 
 # Shutdown after quitting M8C
-#Sleep 2
-#sudo shutdown now
+Sleep 2
+sudo shutdown now
 
