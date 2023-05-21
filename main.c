@@ -79,6 +79,10 @@ int main(int argc, char *argv[]) {
   // initial scan for (existing) game controllers
   initialize_game_controllers();
 
+  if (conf.init_disable_cursor) {
+    SDL_ShowCursor(SDL_DISABLE);
+  }
+
 #ifdef DEBUG_MSG
   SDL_LogSetAllPriority(SDL_LOG_PRIORITY_DEBUG);
 #endif
